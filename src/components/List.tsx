@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { MdOutlineTask } from 'react-icons/md';
 import { MdOutlineCalendarToday } from 'react-icons/md';
 import { BsClock } from 'react-icons/bs';
+import { FaCheck } from 'react-icons/fa';
+import Button from './Button';
 
 interface Task {
     label: string;
@@ -85,13 +87,26 @@ const List: React.FC<ListProps> = ({ tasks }) => {
             <div>
                 {tasks.map((task) => (
                     <div className="border mb-2 p-2 item" key={task.id}>
-                        <div className="mb-3">
+                        <div
+                            className="mb-3"
+                            style={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'space-between',
+                            }}
+                        >
                             <h5 className="mb-0 fb">
                                 <span className="icon me-2">
                                     <MdOutlineTask />
                                 </span>
                                 {task.label}
                             </h5>
+
+                            <h6>
+                                <button className="btn btn-one">
+                                    <FaCheck />
+                                </button>
+                            </h6>
                         </div>
 
                         <div
