@@ -1,0 +1,28 @@
+.card {
+    background: #0d1011;
+    border-radius: 6px;
+    .card-header {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.219);
+        padding: 1rem;
+    }
+
+    .card-body {
+        max-height: 100%;
+        overflow: auto;
+    }
+}
+
+.main-card {
+    width: 1000px;
+    height: 400px;
+
+    .card-body {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.item {
+    border-radius: 6px;
+    border-color: #2c2c2c !important;
+}

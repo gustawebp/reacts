@@ -1,0 +1,19 @@
+.btn-one {
+    background-color: $green;
+    color: white;
+}
+
+.btn-one:hover {
+    background-color: $green-dark;
+    color: white;
+}
+
+.btn-second {
+    background-color: rgba(255, 255, 255, 0.842);
+    color: black;
+}
+
+.btn-second:hover {
+    background-color: rgb(173, 173, 173);
+    color: black;
+}

@@ -1,0 +1,25 @@
+.w-10 {
+    width: 10% !important;
+}
+
+.w-20 {
+    width: 20% !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+.form-control {
+    background-color: hsl(195, 13%, 6%);
+    color: white;
+}
+
+.form-control:focus {
+    background-color: #0e1112;
+    color: white;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.411);
+    color: white;
+}
